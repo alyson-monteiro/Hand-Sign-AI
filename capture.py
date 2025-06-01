@@ -7,7 +7,7 @@ while True:
     check, img = video.read()
     if cv2.waitKey(1) & 0xFF == ord('q'):
         imgR = cv2.resize(img, (32, 32))
-        cv2.imwrite(f'c:\Users\Admin\Desktop\Rede Neural\amostra{amostra}.jpg', imgR)
+        cv2.imwrite(f'imagens/0/amostra{amostra}.jpg', imgR)
         print(f'imagem salva {amostra}')
         amostra += 1
 
